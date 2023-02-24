@@ -21,7 +21,7 @@ function setup() {
 	createCanvas(windowWidth, windowHeigth, WEBGL);
 	D6 = new Dado(6);
 	
-	l=width
+	l=width;
 	
 	uno = loadSound('1.m4a');
 	dos = loadSound('2.m4a');
