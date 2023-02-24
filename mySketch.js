@@ -2,7 +2,7 @@ let dice20;
 
 var deceleration = 0.0005;
 
-var l=50;
+var l=200;
 
 let uno;	
 let dos;
@@ -18,7 +18,7 @@ function preload() {
 
 
 function setup() {
-	createCanvas(100, 100, WEBGL);
+	createCanvas(2*l, 2*l, WEBGL);
 	D4 = new Dado(4);
 	D6 = new Dado(6);
 	D8 = new Dado(8);
@@ -80,7 +80,7 @@ function verDadoFisico(){
 	translate(0,-5,l/2);
 	fill(0);
 	text(1,0,0);
-	translate(0,5,-25);
+	translate(0,5,-l/2);
 	
 	translate(l/2,-5,0);
 	rotateY (PI/2);	
@@ -158,4 +158,8 @@ class Dado{
 			uno.play();
 		}
 	}
+}
+
+function mousePressed(){
+	D6.tirar();
 }
