@@ -18,7 +18,7 @@ function preload() {
 
 
 function setup() {
-	createCanvas(window.width, window.heigth, WEBGL);
+	createCanvas(windowWidth, windowHeigth, WEBGL);
 	D6 = new Dado(6);
 	
 	l=width
