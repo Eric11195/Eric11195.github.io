@@ -2,7 +2,7 @@ let dice20;
 
 var deceleration = 0.0005;
 
-var l=200;
+var l=500;
 
 let uno;	
 let dos;
@@ -18,10 +18,13 @@ function preload() {
 
 
 function setup() {
-	createCanvas(windowWidth, windowHeigth, WEBGL);
+	createCanvas(2*l, 2*l, WEBGL);
+	D4 = new Dado(4);
 	D6 = new Dado(6);
-	
-	l=width;
+	D8 = new Dado(8);
+	D10 = new Dado(10);
+	D12= new Dado(12);
+	D20= new Dado(20);
 	
 	uno = loadSound('1.m4a');
 	dos = loadSound('2.m4a');
