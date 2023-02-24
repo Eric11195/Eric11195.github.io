@@ -18,13 +18,10 @@ function preload() {
 
 
 function setup() {
-	createCanvas(2*l, 2*l, WEBGL);
-	D4 = new Dado(4);
+	createCanvas(window.width, window.heigth, WEBGL);
 	D6 = new Dado(6);
-	D8 = new Dado(8);
-	D10 = new Dado(10);
-	D12= new Dado(12);
-	D20= new Dado(20);
+	
+	l=width
 	
 	uno = loadSound('1.m4a');
 	dos = loadSound('2.m4a');
